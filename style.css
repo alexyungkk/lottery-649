@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(45deg, #2a146b, #c2b0ff);
+    position: relative;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.container{
+    background-color: #e3f9ff;
+    width: 65%;
+    max-width: 1920px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+/*---*/
+/* #arrowIcon{
+
+} */
+#graphOptions {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#selectField, #typeSelectField{
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    background:  rgba(255,255,255,0.7);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+#selectField img, #typeSelectField img{
+    width: 12px;
+    transition: transform 0.5s;
+}
+#list, #typeList{
+    width: 350px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 6px;
+    overflow: hidden;
+}
+.options, .typeOptions {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: left;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+}
+.options:hover, .typeOptions:hover {
+    background: rgba(184, 182, 182, 0.7);
+}
+.hide, .typeHide{
+    visibility: hidden;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.controls-container {
+  display: flex;
+  flex-direction: row;      /* Places children side-by-side */
+  gap: 20px;               /* Adds clean spacing between the dropdowns */
+  width: 100%;            /* Stays inside the light blue parent */
+  box-sizing: border-box;
+}
+/* Apply to the child wrappers holding each dropdown */
+.controls-container > div {
+  flex: 1;                /* Forces both fields to take up equal 50% width */
+  min-width: 0;           /* Prevents text overflow breaking the flex layout */
+}
+/*---*/
+#myChart {
+    padding-bottom: 50px;
+}
+#chartContainer {
+    width: 100%;       /* Fills parent container horizontally */
+    max-width: 100%;   /* Prevents overflow */
+    height: 450px;     /* Sets a explicit height for the chart */
+    box-sizing: border-box;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery 649</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Lotto 6/49 Statistics</h1>
+        <p>Analysis of number appearance frequency and draw sums. 
+            Data updated through July 15, 2026.
+        </p>
+        <div class="graph">
+            <canvas id="myChart"></canvas>
+            <!-- <h1>Hello</h1> -->
+        </div>
+    </div>
+    <div class="container">
+        <h2>Distribution Graph</h2>
+        <p>Distribution of six-number draw totals across all historical draws. 
+            Select a bin width or normalization mode to customize the histogram display.</p>
+        <div class="graph">
+            <div id="chartContainer"></div>
+        </div>
+        <p id="graphOptions">Graph Options</p>
+        <div class="controls-container">            
+            <div class="selector">
+                <div id="selectField">
+                    <p id="selectText">Select Bin Width</p>
+                    <img src="images/arrow.png" id="arrowIcon">
+                </div>
+
+                <ul id="list" class="hide">
+                    <li class="options">
+                        <p id="width">5</p>
+                    </li>
+                    <li class="options">
+                        <p>10</p>
+                    </li>
+                    <li class="options">
+                        <p>15</p>
+                    </li>
+                    <li class="options">
+                        <p>20</p>
+                    </li>
+                </ul>           
+            </div>
+
+            <div class="typeSelector">
+                <div id="typeSelectField">
+                    <p id="typeSelectText">Select Display Type</p>
+                    <img src="images/arrow.png" id="typeArrowIcon">
+                </div>
+
+                <ul id="typeList" class="typeHide">
+                    <li class="typeOptions">
+                        <p id="width">count</p>
+                    </li>
+                    <li class="typeOptions">
+                        <p>percent</p>
+                    </li>
+                    <li class="typeOptions">
+                        <p>probability</p>
+                    </li>
+                    <li class="typeOptions">
+                        <p>density</p>
+                    </li>
+                </ul>           
+            </div>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+        <p id="error"></p>
+    </div>
+
+
+    
+<script type="module" src="script.js"></script>
+</body>
+
+</html>
